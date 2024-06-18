@@ -1,0 +1,48 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.projectDescription{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100vw;
+    height: 50vh;
+}
+.projectDescription img{
+    flex: 1;
+    width: 50%;
+    height: 50%;
+}
+.projectDescription .desc{
+    flex: 1;
+    max-width: 50%;
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.location{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+
+}
+.desc{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}

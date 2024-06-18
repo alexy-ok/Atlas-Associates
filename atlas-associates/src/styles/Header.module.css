@@ -1,0 +1,49 @@
+header {
+    background-color: #ffffff; /* White background for the header */
+    color: rgb(0, 0, 0); /* Black text color */
+    padding: 10px 20px;
+}
+
+.nav {
+    font-family: Inter;
+    display: flex;
+    justify-content: space-between; /* Aligns children to the left and right */
+    align-items: center;
+    width: 100%;
+    min-width: 1000px; /* Ensures the nav bar is at least 1000px wide */
+    min-height: auto;
+
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.logo:hover {
+    color: #da820f; /* Orange color on hover */
+}
+
+.navRight {
+    display: flex; /* Ensures links are in a row */
+    gap: 50px; /* Space between links */
+    text-align: right;
+}
+
+.right {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.alink,.right:hover {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #da820f; /* Orange color on hover */
+}
+
+
