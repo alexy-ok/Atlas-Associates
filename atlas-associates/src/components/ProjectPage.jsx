@@ -1,27 +1,26 @@
 import React from 'react';
 import styles from '../styles/ProjectPage.module.css';
+import { useParams } from 'react-router-dom';
+import Projects from '../data/projects';
+import NoPage from '../pages/NoPage';
 
-const highlightType = (type) => {
-  if (type === 'Residential') {
-    return styles.residential;
-  } else if (type === 'Commercial') {
-    return styles.commercial;
-  }
-}
+const ProjectPage = () => {
+  const { id } = useParams();
+  const project = Projects.find(proj => proj.id === id);
 
-function ProjectPage(input) {
+  if (!project) return (<NoPage/>);
   return (
     <div>
         
         <div className = {styles.main}>
           <div className = {styles.projectDescription}>
-          <div className='Image'>
-                <img src={input.image} alt={input.name}  className="project-image"/>
+             <div className={styles.Images}>
+                <img src={project.mainImage} alt={project.title}  className="project-image"/>
             </div>
             <div className= {styles.desc}>
-                <h1 className = {styles.title}>{input.name}</h1>
-                <h2 className = {styles.location}>{input.location}</h2>
-                <p>{input.desc}</p>
+                <h1 className = {styles.title}>{project.title}</h1>
+                <h2 className = {styles.location}>{project.location}</h2>
+                <p>{project.description}</p>
             </div>
           </div>
         </div>

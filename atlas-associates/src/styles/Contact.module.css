@@ -1,0 +1,14 @@
+.header{
+    text-align: center;
+    color: white;
+}
+.text{
+    margin-left: 25%;
+}
+.banner{
+    background-color: black;
+    justify-content: center;
+    align-content:center;
+    width: 100%;
+    height: 200px;
+}

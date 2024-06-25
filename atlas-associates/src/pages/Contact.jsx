@@ -1,10 +1,17 @@
+import styles from '../styles/Contact.module.css';
+
 function Contact() {
     return (
         <div>
-            <h1>Contact Us</h1>
-            <p>For more information, please contact us at:</p>
-            <p>Phone: 555-555-5555</p>
-            <p>Email: </p>
+            <div className={styles.banner}>
+                <h1 className={styles.header}>Contact Us</h1>
+            </div>
+            
+            <div className={styles.text}>
+                <p>For more information, please contact us at:</p>
+                <p>Phone: 206-488-3688</p>
+                <p>Email: gengtan@gmail.com</p>
+            </div>
         </div>
     );
 }

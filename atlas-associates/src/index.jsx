@@ -2,11 +2,11 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import ProjectPage from "./components/ProjectPage"
 import NoPage from "./pages/NoPage";
- import BellevueModern from "./pages/BellevueModern";
 import Contact from "./pages/Contact";
 import "./styles/index.css";
-import Residential from "./pages/Residential";
+import Projects from "./pages/Projects";
 
 export default function App() {
   return (
@@ -14,9 +14,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
-          <Route path="/b" element={<BellevueModern />} />
-          <Route path="/residential" element={<Residential />} />
-          <Route path="/commercial" element={<NoPage />} />
+          <Route path="/residential" element={<Projects type = 'residential' name='Residential'/>} />
+          <Route path="/residential/:id" element={<ProjectPage />}/>
+          <Route path="/commercial" element={<Projects type = 'commercial' name='Commercial'/>} />
+          <Route path="/commercial/:id" element={<ProjectPage />}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
