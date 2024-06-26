@@ -1,6 +1,25 @@
 import styles from '../styles/Contact.module.css';
 
 function Contact() {
+    const [status, setStatus] = useState('');
+
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      const form = event.target;
+      const data = new FormData(form);
+  
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString(),
+        });
+        setStatus('Form submission successful!');
+        form.reset();
+      } catch (error) {
+        setStatus('Form submission error: ' + error.message);
+      }
+    };
     return (
         <div>
             <div className={styles.banner}>
@@ -14,8 +33,8 @@ function Contact() {
             </div>
 
             <div className={styles.form}>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="/contact"/>
+                <form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact"/>
                     <p className={styles.hidden}>
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </p>
