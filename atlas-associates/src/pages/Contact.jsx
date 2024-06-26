@@ -14,7 +14,7 @@ function Contact() {
             </div>
 
             <div className={styles.form}>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="contact" onSubmit="submit" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="/"/>
                     <p className={styles.hidden}>
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
