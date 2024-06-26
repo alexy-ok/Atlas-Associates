@@ -14,7 +14,7 @@ function Contact() {
             </div>
 
             <div className={styles.form}>
-                <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+                <form name="contact" method="post" data-netlify="true" onSubmit="submit" netlify>
                     <input type="hidden" name="contact-form" value="contact"/>
                     <div>
                         <label> Full Name
