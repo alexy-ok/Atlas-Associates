@@ -68,11 +68,12 @@ function Contact() {
                         <br/><br/>
 
                         <label for="schedule">If you have a schedule in mind, please explain below:</label><br/>
-                       
-                        <label for="scheduleMonths">I’d like to start construction on this project in:</label>
                         <div className={styles.inlineinputs}>
+                        <label for="scheduleMonths">I’d like to start construction on this project in:</label>
+                       
                         <input type="text" id="scheduleMonths" name="scheduleMonths" className={styles.halfInput}/> months<br/><br/>
                         </div>
+
                         <label for="existingPlans">If you are doing a remodel or addition, do you have any existing plans of the house? (please mark all that apply):</label><br/>
                         <div className={styles.inlineinputs}>
                         <input type="checkbox" id="noPlans" name="existingPlans" value="I don’t have any plans"/>

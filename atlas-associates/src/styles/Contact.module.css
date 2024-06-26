@@ -83,6 +83,6 @@
     background-color: #45a049;
 }
 
-.form .halfInput {
-    width:50%;
+.form .inlineinputs .halfInput {
+    width:30%;
 }
