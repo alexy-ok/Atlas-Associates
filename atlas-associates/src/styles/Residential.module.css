@@ -15,12 +15,13 @@
     margin-top: 0;
     margin-bottom: 0%;
     width: 60%;
-    aspect-ratio: 1 / 1;
-    height: auto;
+
+
 }
 .project{
     width: 100%;
     background-color: gray;
+    position: relative;
 
 }
 .project::before {
@@ -29,3 +30,14 @@
     padding-bottom: 100%; /* This makes the height equal to the width, creating a square */
 }
 
+
+.project > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
