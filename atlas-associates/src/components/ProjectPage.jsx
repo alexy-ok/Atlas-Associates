@@ -14,9 +14,7 @@ const ProjectPage = () => {
         
         <div className = {styles.main}>
           <div className = {styles.projectDescription}>
-             <div className={styles.Images}>
-                <img src={project.mainImage} alt={project.title}  className="project-image"/>
-            </div>
+                <img src={project.mainImage} alt={project.title} className="project-image"/>
             <div className= {styles.desc}>
                 <h1 className = {styles.title}>{project.title}</h1>
                 <h2 className = {styles.location}>{project.location}</h2>
