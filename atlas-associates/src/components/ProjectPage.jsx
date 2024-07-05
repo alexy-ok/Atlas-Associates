@@ -20,7 +20,15 @@ const ProjectPage = () => {
                 <h2 className = {styles.location}>{project.location}</h2>
                 <p>{project.description}</p>
             </div>
+            
           </div>
+          <div className={styles.imageGallery}>
+              {project.images.map((image,index) => (
+                <div key={index} className={styles.imageContainer}>
+                  <img src={image} alt={`${project.title} ${index + 1}`}/>
+                </div>  
+              ))}
+            </div>
         </div>
     </div>
   );

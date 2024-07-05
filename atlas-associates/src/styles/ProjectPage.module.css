@@ -57,3 +57,19 @@
     color: #444;
     white-space: pre-wrap;
 }
+.imageGallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 0%;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.imageGallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}

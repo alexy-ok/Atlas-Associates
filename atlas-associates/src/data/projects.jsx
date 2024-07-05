@@ -19,6 +19,13 @@ Open living space and kitchen and a large island that open to the greenish backy
       `,
       details: 'Detailed information about Project 2.',
       mainImage: '/better-bellevue/main.jpg',
+      images: [
+        '/better-bellevue/image1.jpg',
+        '/better-bellevue/image2.jpg',
+        '/better-bellevue/image3.jpg',
+        '/better-bellevue/image4.jpg',
+        '/better-bellevue/image5.jpg',
+      ],
     },
     {
       id: 'Bellevue',
