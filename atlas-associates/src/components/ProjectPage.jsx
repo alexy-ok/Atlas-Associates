@@ -18,7 +18,8 @@ const ProjectPage = () => {
             <div className= {styles.desc}>
                 <h1 className = {styles.title}>{project.title}</h1>
                 <h2 className = {styles.location}>{project.location}</h2>
-                <p>{project.description}</p>
+                <h2 className = {styles.location}>{project.form}</h2>
+                <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
             </div>
             
           </div>
