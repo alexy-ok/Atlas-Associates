@@ -11,7 +11,8 @@ function Projects ({type, name}){
             <h1>{name} Projects</h1>
             <div className={styles.grid}>
                 {residentialProjects.map(project => (
-                     <ProjectsPreview key={project.id} input={project} />
+                     <ProjectsPreview key={project.id} input={project}/>
+                    
                 ))}
             </div>
         </div>

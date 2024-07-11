@@ -4,13 +4,29 @@
   text-decoration: none;
   margin: 15px;
   overflow: hidden;
-  width: 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height to make it square */
+  width: 100%; /* Set a fixed width */
+  height: 100%; /* Set a fixed height to make it square */
+  max-height: 100%;
   border: 2px solid #ddd; /* Adds a border around each project preview */
   border-radius: 8px; /* Rounded corners */
   transition: transform 0.3s ease;
 }
+.imageContainer::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* This makes the height equal to the width, creating a square */
+}
 
+.imageContainer > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .imageContainer img {
   
   height: 100%;
@@ -37,6 +53,7 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  font-family: Inter;
 }
 
 .imageContainer:hover .overlay {

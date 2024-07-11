@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/ProjectPage.module.css';
 import { useParams } from 'react-router-dom';
-import Projects from '../data/projects';
+import Projects from '../data/projects.jsx';
 import NoPage from '../pages/NoPage';
 
 const ProjectPage = () => {

@@ -1,14 +1,6 @@
 // src/data/projects.js
 const projects = [
     {
-      id: 'redmond-residence',
-      title: 'Redmond Residence',
-      type: 'residential',
-      description: 'The residence is a modern two-story structure with an innovative walkout basement, including an Accessory Dwelling Unit (ADU). The highlight of its design is the multi-level atriums, adding an extraordinary spatial dynamic. The centerpiece is an open staircase leading to a skylight-crowned atrium, bathing the home in natural light. At its core, an open-plan living area seamlessly transitions into a double-height living room, anchored by a striking central fireplace.',
-      details: 'Detailed information about Project 1.',
-      mainImage: '',
-    },
-    {
       id: 'better-bellevue',
       title: 'Better Bellevue Home',
       type: 'residential',
@@ -20,6 +12,7 @@ Open living space and kitchen and a large island that open to the greenish backy
       `,
       details: 'Detailed information about Project 2.',
       mainImage: '/better-bellevue/main.jpg',
+      thumbnail:  '/better-bellevue/thumbnail.jpg',
       images: [
         '/better-bellevue/image1.jpg',
         '/better-bellevue/image2.jpg',
@@ -39,6 +32,7 @@ Open living space and kitchen and a large island that open to the greenish backy
 <b>Internal Space:</b> We opened the entry area and created a two-story lobby with open stairs that really increased the quality of space in this whole house. The main floor mainly created an open kitchen area and add another garage. On the upper level, we sacrificed one room to create a new master suite with a new building standard master bathroom with a soaking bath and a walk-in closet. Over the existing building, we added two more guest rooms with a multi-function room, which can easily separate from the main house, and create a separate mother-in-law unit with separate entry from the deck. `,
     details: 'Detailed information about Project 2.',
       mainImage: '/eastgate-addition/main.jpg',
+      thumbnail:  '/eastgate-addition/thumbnail.jpg',
       images:[
         '/eastgate-addition/image1.jpg',
         '/eastgate-addition/image2.jpg',
@@ -58,6 +52,7 @@ Open living space and kitchen and a large island that open to the greenish backy
 <br/><b>Internal Space:</b> This is a 4-story mixed-use building with a walkout basement for senior living. The main floor is mainly parking space to efficiently use the lot. The second level is a medical office, operation room, and pharmacy, third and fourth floors and a walkout basement total have 14 senior units and a clubhouse with a roof garden to provide common service and activity place for the seniors.  The roof deck also takes advantage of the view of 405 and downtown Bellevue.   `,
       details: 'Detailed information about Project 2.',
       mainImage: '/belred-senior/main.jpg',
+      thumbnail:  '/belred-senior/thumbnail.jpg',
       images: [
         '/belred-senior/image1.jpg',
         '/belred-senior/image2.jpg',
