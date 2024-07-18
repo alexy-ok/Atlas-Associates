@@ -14,9 +14,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
-          <Route path="/residential" element={<Projects type = 'residential' name='Residential'/>} />
+          <Route path="/residential" element={<Projects type='residential' name='Residential'/>} />
           <Route path="/residential/:id" element={<ProjectPage />}/>
-          <Route path="/commercial" element={<Projects type = 'commercial' name='Commercial'/>} />
+          <Route path="/commercial" element={<Projects type ='commercial' name='Commercial'/>} />
           <Route path="/commercial/:id" element={<ProjectPage />}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />

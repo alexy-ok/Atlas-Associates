@@ -1,4 +1,4 @@
-import styles from '../styles/Residential.module.css';
+import styles from '../styles/Projects.module.css';
 import React, { useState } from 'react';
 import ProjectsPreview from '../components/ProjectsPreview';
 import projects from '../data/projects';
@@ -7,15 +7,22 @@ function Projects ({type, name}){
 
 
     return (
+
+        <>
+        <title>{name} Projects</title>
+
         <div className={styles.main}>
             <h1>{name} Projects</h1>
+
             <div className={styles.grid}>
                 {residentialProjects.map(project => (
                      <ProjectsPreview key={project.id} input={project}/>
                     
                 ))}
             </div>
+
         </div>
+        </>
     );
 }
 

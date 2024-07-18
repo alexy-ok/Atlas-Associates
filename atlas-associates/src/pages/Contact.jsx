@@ -3,11 +3,27 @@ import styles from '../styles/Contact.module.css';
 
 function Contact() {
     return (
-        <div>
+        <div className={styles.page}>
+            <title>Contact Us</title>
+            
+            <div className={styles.banner}>
+                <h1 className={styles.header}>About Us</h1>
+            </div>
+
+            <div className={styles.aboutPerson}> 
+                <p>IMG HERE</p>
+                <div>
+                <h2>Geng Tan</h2>
+                <p>Geng Tan is an architect</p>
+                </div>
+                
+                
+            </div>
+
             <div className={styles.banner}>
                 <h1 className={styles.header}>Contact Us</h1>
             </div>
-            
+
             <div className={styles.text}>
                 <p>For more information, please contact us at:</p>
                 <p>Phone: 206-488-3688</p>

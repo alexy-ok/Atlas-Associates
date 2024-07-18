@@ -19,3 +19,17 @@
 
 
 }
+
+/* For medium screens, adjust to 2 columns */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For small screens, adjust to 1 column */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

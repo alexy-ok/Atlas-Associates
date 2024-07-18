@@ -58,6 +58,23 @@ Open living space and kitchen and a large island that open to the greenish backy
         '/belred-senior/image2.jpg',
       ],
     },
+    {
+      id: 'happy-lamb',
+      title: 'Happy Lamb Hotpot Addition',
+      type: 'commercial',
+      form: 'Addition',
+      location: 'Bellevue, WA',
+      address: '1411 156th Ave NE, Bellevue, WA 98007',
+      description:
+      `Happ Lamb Hotpot Commercial Addition `,
+      details: 'Detailed information about Project 2.',
+      mainImage: '/happy-lamb/main.jpg',
+      thumbnail:  '/happy-lamb/thumbnail.jpg',
+      images: [
+        '/happy-lamb/image1.jpg',
+        '/happy-lamb/image2.jpg',
+      ],
+    },
 
     // Add more projects as needed
   ];
