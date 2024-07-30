@@ -22,7 +22,7 @@ function Header() {
                         <NavLink to="/commercial" className={({ isActive }) => isActive ? styles.alink : styles.right}>🏗</NavLink>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? styles.alink : styles.right}>✉</NavLink>
                     </Media>
-                    <Media query="(min-width: 768px)">
+                    <Media query="(min-width: 768px)">  
                         <NavLink to="/residential" className={({ isActive }) => isActive ? styles.alink : styles.right}>Residential</NavLink>
                         <NavLink to="/commercial" className={({ isActive }) => isActive ? styles.alink : styles.right}>Commercial</NavLink>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? styles.alink : styles.right}>Contact</NavLink>

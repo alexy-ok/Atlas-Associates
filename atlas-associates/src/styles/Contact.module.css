@@ -73,7 +73,7 @@
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 .form .inlineinputs {
     display: flex;
@@ -102,4 +102,25 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    width:100%;
+
+}
+.aboutPerson img{
+    flex:1;
+    max-width: 20%;
+    height:auto;
+    width:auto;
+    border-radius:8px;
+
+}
+.aboutPerson .text{
+    flex: 1;
+    max-width: 50%;
+    width: 50%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
 }
