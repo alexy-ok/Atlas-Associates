@@ -15,7 +15,7 @@ function ProjectsPreview({input}) {
                 <p className={styles.p}>{input.title}</p>
             </MobileView>
         </a>
-    );
+    ); 
 }
 
 export default ProjectsPreview;
