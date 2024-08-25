@@ -7,7 +7,7 @@ function Footer() {
   
     return (
         <>
-        <footer className={styles.footer} role="banner">
+        <footer className={styles.footer}>
             <div className={styles.footerContent}>
                 <p>©Atlas Associates 2024. All rights reserved.</p>
             </div>

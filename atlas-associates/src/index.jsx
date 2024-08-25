@@ -8,22 +8,32 @@ import Contact from "./pages/Contact";
 import "./styles/index.css";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
+// index.js
+import 'normalize.css';
+
+
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<Home />} />
-          <Route path="/residential" element={<Projects type='residential' name='Residential'/>} />
-          <Route path="/residential/:id" element={<ProjectPage />}/>
-          <Route path="/commercial" element={<Projects type ='commercial' name='Commercial'/>} />
-          <Route path="/commercial/:id" element={<ProjectPage />}/>
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-      <Footer/>
+      <div className="app">
+      <Header />
+        <div className="main">
+          <Routes>
+          
+            <Route index element={<Home />} />
+            <Route path="/residential" element={<Projects type='residential' name='Residential'/>} />
+            <Route path="/residential/:id" element={<ProjectPage />}/>
+            <Route path="/commercial" element={<Projects type ='commercial' name='Commercial'/>} />
+            <Route path="/commercial/:id" element={<ProjectPage />}/>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NoPage />} />
+      
+        
+          </Routes>
+        </div>
+        <Footer/>
+      </div>
     </BrowserRouter>
   );
 }
