@@ -35,3 +35,21 @@ footer {
 .social-links a:hover {
     text-decoration: underline;
 }
+
+.right{
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    font-size: .75rem;
+    padding-top: .75rem;
+}
+.right p{
+    margin: 0;
+    padding-bottom: .5rem;
+}
+
+.right p:last-child{
+    margin: 0;
+}
