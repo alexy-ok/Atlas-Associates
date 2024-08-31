@@ -22,7 +22,7 @@ const ProjectPage = () => {
 
     
     <div>
-        <title>{project.title} Project Page  </title>
+        <title>{project.title} Project Page</title>
         <div className = {styles.main}>
           <div className = {pClassName}>
               

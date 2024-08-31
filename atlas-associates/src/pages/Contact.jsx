@@ -29,7 +29,7 @@ function Contact() {
                 </div>
             </div>
 
-            <div className={styles.contactSection}>
+            <div className={styles.contactSection} id="contact1">
                 <div className={styles.banner}>
                     <h1 className={styles.header}>Stay in Touch</h1>
                 </div>
