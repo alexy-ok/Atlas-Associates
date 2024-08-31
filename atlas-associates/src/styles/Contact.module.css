@@ -13,84 +13,9 @@
     background-color: rgb(31, 31, 31);
     justify-content: center;
     align-content: center;
-    width: 75%;
+    width: 100%;
     height: 200px;
 } 
-
-.form {
-    padding: 1.25rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: .5rem;
-    margin: 1.25rem auto;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.form form div {
-    margin-bottom: 1.25rem;
-}
-
-.form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.form input[type="text"],
-.form input[type="email"],
-.form input[type="tel"],
-.form textarea,
-.form input[type="radio"],
-.form input[type="checkbox"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form input[type="radio"],
-.form input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-    margin-left:0;
-}
-
-.form textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-.form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1.2rem;
-}
-.form .inlineinputs {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.form .inlineinputs label{
-    margin-top:11px;
-}
-.form button:hover {
-    background-color: #45a049;
-}
-
-.form .inlineinputs .halfInput {
-    width:30%;
-}
 
 .hidden {
     display: none;
@@ -111,6 +36,9 @@
     height:auto;
     width:auto;
     border-radius:8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .aboutPerson .text{
@@ -122,5 +50,86 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 0px;
+
+}
+.aboutPerson .text p{
+    line-height: 1.5;
+}
+.aboutLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width:100%;
+
+}
+.aboutLeft img{
+    flex:1;
+    max-width: 20%;
+    height:auto;
+    width:auto;
+    border-radius:8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.aboutLeft .text{
+    flex: 1;
+    max-width: 50%;
+    width: 50%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0px;
+    margin-left: 5rem;
+
+}
+h2{
+    margin-bottom: 0;
+    
+}
+
+.contactForm{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.contact{
+    display:flex;
+    flex-direction: row;
+    gap:25%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-image: url(rendered.png);
+    padding: 1rem;
+    height: 35rem;
+}
+
+.contact .text{
+    flex: 1;
+    background-color: #da820f;
+    
+    padding: 3rem;
+
+    width:50rem;
+    align-self: center; 
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.contact .text h2{
+    margin:0;
+}
+.contactSection{
+    margin: 3rem;
 
 }

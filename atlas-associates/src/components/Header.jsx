@@ -10,10 +10,11 @@ function Header() {
     const location = useLocation();
     const isResidentialActive = checkActive(location.pathname, 'residential');
     const isCommercialActive = checkActive(location.pathname, 'commercial');
-  
+    const transparentRoutes = ['/contact'];
+    const isTransparent = transparentRoutes.includes(location.pathname);
     return (
         <>
-        <header className={styles.header} role="banner">
+        <header className="header"   role="banner">
             <nav className={styles.nav}>
                 <Link to="/" className={styles.logo}>Atlas Associates</Link>
                 <div className={styles.navRight}>
