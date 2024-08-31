@@ -3,7 +3,7 @@ function ContactForm(){
 
     return(
         <div className = "Form">
-            <form className={styles.form} name="contact" method="post">
+            <form className={styles.form} name="contact" method="post" data-netlify="true" onSubmit="submit">
                 <input type="hidden" name="form-name" value="contact"/>
                 <b>Full Name<span className={styles.highlight}>*</span></b>
                 <input required type="text" name="name"  placeholder="Your Full Name"/>
