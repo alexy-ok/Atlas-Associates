@@ -9,7 +9,7 @@ function Projects ({type, name}){
     return (
 
         <>
-        <title>{name} Projects</title>
+        <title>{name} Projects | Atlas Associates Architecture</title>
 
         <div className={styles.main}>
             <h1>{name} Projects</h1>

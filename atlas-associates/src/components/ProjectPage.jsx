@@ -22,24 +22,29 @@ const ProjectPage = () => {
 
     
     <div>
-        <title>{project.title} Project Page</title>
+        <title>{project.title} Project Page| Atlas Associates Architecture</title>
         <div className = {styles.main}>
           <div className = {pClassName}>
               
-                <img src={project.mainImage} alt={project.title} className="project-image"/>
+                <img src={project.mainImage} alt={`${project.title} Main Image`}  className="project-image"/>
         
             <div className= {styles.desc}>
                 <h1 className = {styles.title}>{project.title}</h1>
                 <h2 className = {styles.location}>{project.location}</h2>
                 <h2 className = {styles.location}>{project.form}</h2>
-                <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                <div className={styles.areaDesc}>
+                  <p><b>Lot size: </b>{project.lotSize}</p>
+                  <p><b>Building areas: </b>{project.buildingAreas}</p>
+                </div>
+                <p><b>Exterior Environment: </b>{project.exteriorEnvironment}</p>
+                <p><b>Interior Environment: </b>{project.interiorEnvironment}</p>
             </div>
             
           </div>
           <div className={styles.imageGallery}>
               {project.images.map((image,index) => (
                 <div key={index} className={styles.imageContainer}>
-                  <img src={image} alt={`${project.title} ${index + 1}`}/>
+                  <img src={image} alt={`${project.title} Image: ${index + 1}`}/>
                 </div>  
               ))}
             </div>

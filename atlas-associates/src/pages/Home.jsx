@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import bellevue from '../images/bellevue.jpg';
+
 function Home() {
   return (
     <>
-    <title>Home Page</title>
+    <title>Atlas Associates Architecture | Bellevue, Washington</title>
 
     <div className={styles.page}>
 
       <div className={styles.fullPage} >
-        <img src={bellevue} alt="Bellevue" className={styles.image}/>
+        <img src='./rendered.jpg' alt="Bellevue" className={styles.image}/>
         <div className={styles.overlay}>
-          <div className={styles.text}>Bellevue Modern House</div>
+          <div className={styles.text}></div>
         </div>
       </div>
 

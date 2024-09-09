@@ -1,8 +1,8 @@
 header {
     background-color: #ffffff; /* White background for the header */
     color: rgb(0, 0, 0); /* Black text color */
-    padding: 10px 20px;
-    margin: 1rem;
+    margin: 0 2rem;
+
     
 }
 
@@ -13,7 +13,7 @@ header {
     align-items: center;
     width: 100%;
     min-width: 300px;
-    min-height: auto;
+    min-height: 100px;
 
 }
 
@@ -31,7 +31,8 @@ header {
 
 .navRight {
     display: flex; /* Ensures links are in a row */
-    gap: 3rem; /* Space between links */
+     /* Space between links */
+    gap: 3.3rem;
     text-align: right;
 }
 
@@ -49,3 +50,45 @@ header {
 }
 
 
+@media (max-width: 768px) {
+    .navRight{
+        gap:5px;
+    }
+}
+
+.hamburgerIcon {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed; /* Ensures the menu stays below the header */
+    top: 110px; /* Adjust to match the height of your header */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.mobileMenu a {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hamburgerIcon {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: none; 
+    }
+}

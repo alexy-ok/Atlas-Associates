@@ -110,7 +110,7 @@ h2{
     gap: 25%;
     margin-top: 2rem;
     margin-bottom: 5rem;
-    background-image: url('./rendered.jpg');
+    background-image: url('rendered.jpg');
     padding: 1rem;
     height: auto;
     background-size: cover;

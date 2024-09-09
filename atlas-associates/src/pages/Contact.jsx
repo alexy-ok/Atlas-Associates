@@ -5,7 +5,7 @@ function Contact() {
     return (
         <div className={styles.page}>
 
-            <title>Contact Us</title>
+            <title>Contact Us | Atlas Associates Architecture Bellevue Washington</title>
 
             <div className={styles.aboutSection}>
                 <div className={styles.banner}>
@@ -34,7 +34,7 @@ function Contact() {
                     <h1 className={styles.header}>Stay in Touch</h1>
                 </div>
                 <div className={styles.contact}>
-                    
+                        
                         <div className={styles.text}>
 
                             <h2>Atlas Associates:</h2>
