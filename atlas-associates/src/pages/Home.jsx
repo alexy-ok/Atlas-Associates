@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-
+import Bellevue3D from '../components/Bellevue3D';
 function Home() {
   return (
     <>
@@ -9,7 +9,8 @@ function Home() {
     <div className={styles.page}>
 
       <div className={styles.fullPage} >
-        <img src='./rendered.jpg' alt="Bellevue" className={styles.image}/>
+        <img src='./rendered.jpg' alt="Bellevue" className={styles.image} hidden />
+        <Bellevue3D/>
         <div className={styles.overlay}>
           <div className={styles.text}></div>
         </div>
