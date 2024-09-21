@@ -25,9 +25,14 @@ const ProjectPage = () => {
         <title>{project.title} Project Page| Atlas Associates Architecture</title>
         <div className = {styles.main}>
           <div className = {pClassName}>
-              
-                <img src={project.mainImage} alt={`${project.title} Main Image`}  className="project-image"/>
-        
+            <div className={styles.mainImage}>
+                <img src={project.mainImage} alt={`${project.title} Main Image`} className={styles.mainImageImage} />
+                {/*before image*/}
+                {project.form === "Addition/Remodel" && project.beforeImage && (
+                    <img src={project.beforeImage} alt={`${project.title} Before Image`} className={styles.beforeImage}/>
+                  )
+                }
+            </div>
             <div className= {styles.desc}>
                 <h1 className = {styles.title}>{project.title}</h1>
                 <h2 className = {styles.location}>{project.location}</h2>

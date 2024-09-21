@@ -33,13 +33,12 @@ const projects = [
     mainImage: '/projects/eastgate-addition/main.jpg',
     thumbnail: '/projects/eastgate-addition/thumbnail.jpg',
     images: [
-      '/projects/eastgate-addition/image1.jpg',
-      '/projects/eastgate-addition/image2.jpg',
       '/projects/eastgate-addition/image3.jpg',
       '/projects/eastgate-addition/image4.jpg',
       '/projects/eastgate-addition/image5.jpg',
       '/projects/eastgate-addition/image6.jpg'
-    ]
+    ],
+    beforeImage: '/projects/eastgate-addition/image1.jpg'
   },
   {
     id: 'woodridge-addition',

@@ -17,12 +17,14 @@
 
 .fullPage{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     height: 100%;
-    width:100%;
+    width: 80%;
     overflow: hidden;
+    margin-top:0;
+    margin-bottom: 2.5%;
 }
 
 .image{
