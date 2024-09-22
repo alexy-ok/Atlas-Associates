@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    color: black;
+    color: #da820f;
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
@@ -26,7 +26,7 @@ header {
 }
 
 .logo:hover {
-    color: #da820f; /* Orange color on hover */
+    color: black; /* Orange color on hover */
 }
 
 .navRight {

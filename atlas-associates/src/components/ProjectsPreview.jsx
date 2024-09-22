@@ -6,7 +6,7 @@ function ProjectsPreview({input}) {
     return (
         <a className={styles.a} href={`/${input.type}/${input.id}`}>
             <div className={styles.imageContainer}>
-                <img src= {input.thumbnail} alt={`link to ${input.title}`} height='300' width='300'/>
+                <img src= {input.mainImage} alt={`link to ${input.title}`} />
                 <div className={styles.overlay}>
                     <div className={styles.text}>{input.title}</div>
                 </div>
